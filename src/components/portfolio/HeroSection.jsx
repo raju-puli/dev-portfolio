@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, ArrowDown, Github, Linkedin, Circle } from "lucide-react";
+import bg from "@/assets/bg.png";
 
 const titles = [
   "Frontend Engineer",

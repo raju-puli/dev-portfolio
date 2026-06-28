@@ -3,6 +3,7 @@ const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
+import resume from "../../assets/Resume/raju__puli__resume.pdf"
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -82,7 +83,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://media.db.com/files/public/user_6a0414d1264f18e01fde51b4/514a3edf2_raju__puli__resume.pdf"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-3 flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg text-sm font-medium transition-all border border-primary/20"
@@ -127,7 +128,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="https://media.db.com/files/public/user_6a0414d1264f18e01fde51b4/514a3edf2_raju__puli__resume.pdf"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}

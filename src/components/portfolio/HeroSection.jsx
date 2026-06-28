@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, ArrowDown, Github, Linkedin, Circle } from "lucide-react";
-import bg from "@/assets/bg.png";
+import bg from "../../assets/bg.png";
+import avatar from "../../assets/avatar.png";
 
 const titles = [
   "Frontend Engineer",
@@ -40,7 +41,7 @@ export default function HeroSection() {
       {/* Mesh gradient background */}
       <div className="absolute inset-0">
         <img
-          src="/assets/bg.png"
+          src={bg}
           alt="Abstract futuristic background"
           className="w-full h-full object-cover opacity-40"
         />
@@ -70,7 +71,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-accent animate-spin" style={{ animationDuration: '8s' }} />
             <div className="absolute inset-[3px] rounded-full overflow-hidden bg-background">
               <img
-                src="/assets/avtar.png"
+                src={avatar}
                 alt="Raju Puli"
                 className="w-full h-full object-cover"
               />

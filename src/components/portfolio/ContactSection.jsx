@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { Mail, Phone, MapPin, Github, Linkedin, Send, Download } from "lucide-react";
+import resume from "../../assets/Resume/raju__puli__resume.pdf"
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "rajupuli090322@gmail.com", href: "mailto:rajupuli090322@gmail.com" },
@@ -140,7 +141,7 @@ export default function ContactSection() {
             {/* Resume Download */}
             <div className="mt-6 pt-6 border-t border-white/5">
               <a
-                href="https://media.db.com/files/public/user_6a0414d1264f18e01fde51b4/514a3edf2_raju__puli__resume.pdf"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-6 py-3 border border-white/10 bg-white/[0.03] text-foreground font-medium rounded-xl hover:border-primary/30 hover:text-primary transition-all text-sm"

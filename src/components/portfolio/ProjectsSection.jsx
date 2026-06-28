@@ -1,9 +1,31 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+const db = globalThis.__B44_DB__ || {
+  auth: {
+    isAuthenticated: async () => false,
+    me: async () => null
+  },
+  entities: new Proxy({}, {
+    get: () => ({
+      filter: async () => [],
+      get: async () => null,
+      create: async () => ({}),
+      update: async () => ({}),
+      delete: async () => ({})
+    })
+  }),
+  integrations: {
+    Core: {
+      UploadFile: async () => ({ file_url: '' })
+    }
+  }
+};
 
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Github, ExternalLink, Gamepad2, Globe } from "lucide-react";
+import { Github, Gamepad2, Globe } from "lucide-react";
+
+import project1 from "../../assets/6774fbe31_generated_image.png";
+import project2 from "../../assets/f2c9605b3_generated_image.png";
 
 const projects = [
   {
@@ -11,10 +33,14 @@ const projects = [
     subtitle: "React + WebSockets",
     description:
       "Full gameplay interface with card rendering, player interactions, and real-time updates. Implemented WebSocket for live game events, player actions, and table management. Cross-platform mobile and desktop builds via Cordova.",
-    image: "https://media.db.com/images/public/6a3e6a42e0e905a9cc608d31/308f9c04c_generated_70085858.png",
+    image: project1,
     tags: ["React", "Redux", "Konva.js", "GSAP", "WebSockets", "Cordova"],
     icon: Gamepad2,
-    highlights: ["20K+ concurrent users", "4 platform builds", "30% faster rendering"],
+    highlights: [
+      "20K+ concurrent users",
+      "4 platform builds",
+      "30% faster rendering"
+    ],
     github: "https://github.com/raju-puli",
   },
   {
@@ -22,19 +48,29 @@ const projects = [
     subtitle: "Angular",
     description:
       "Built 10+ branded websites with responsive design and multi-language support. Integrated payment gateways and currency exchange with real-time conversion. Websites include Playbet, Rajpoker, RiverPoker, ClanSaga, and SouthRummy.",
-    image: "https://media.db.com/images/public/6a3e6a42e0e905a9cc608d31/365d36b84_generated_d12b27f3.png",
+    image: project2,
     tags: ["Angular", "TypeScript", "Bootstrap", "REST APIs", "i18n"],
     icon: Globe,
-    highlights: ["10+ branded sites", "Multi-language", "Payment integration"],
+    highlights: [
+      "10+ branded sites",
+      "Multi-language",
+      "Payment integration"
+    ],
     github: "https://github.com/raju-puli",
   },
 ];
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-16 md:py-32 relative">
+    <section
+      id="projects"
+      className="py-16 md:py-32 relative"
+    >
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
-        <SectionHeading title="Projects" subtitle="// what I've built" />
+        <SectionHeading
+          title="Projects"
+          subtitle="// what I've built"
+        />
 
         <div className="space-y-8">
           {projects.map((project, i) => (
@@ -53,20 +89,29 @@ export default function ProjectsSection() {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent md:bg-gradient-to-r" />
+
                 <div className="absolute top-4 left-4">
                   <div className="p-2.5 rounded-xl bg-primary/20 backdrop-blur-sm border border-primary/30">
-                    <project.icon size={20} className="text-primary" />
+                    <project.icon
+                      size={20}
+                      className="text-primary"
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-5 sm:p-6 md:p-8 flex flex-col justify-center">
-                <span className="font-mono text-xs text-primary mb-2">{project.subtitle}</span>
+                <span className="font-mono text-xs text-primary mb-2">
+                  {project.subtitle}
+                </span>
+
                 <h3 className="font-display text-xl md:text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
+
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {project.description}
                 </p>

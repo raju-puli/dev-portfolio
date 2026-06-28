@@ -1,79 +1,75 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+# Raju Puli – Developer Portfolio
 
-# Base44 Project
+A modern developer portfolio built with React and Vite, showcasing my projects, skills, and experience as a Front-End Developer.
 
-Use this repository to run and edit the app locally, then publish changes back through db.
+## 🚀 Tech Stack
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+* React.js
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+* Responsive Design
 
-## Prerequisites
+## 📂 Features
 
-1. Clone the repository using the project's Git URL.
-2. Navigate to the project directory.
-3. Install dependencies: `npm install`.
-4. Install the Base44 CLI: `npm install -g base44@latest`.
+* Modern UI/UX design
+* Fully responsive layout
+* Smooth animations and transitions
+* Project showcase section
+* Skills and experience section
+* Contact section
 
-See the [Base44 CLI docs](https://docs.db.com/developers/references/cli/get-started/overview) if you want to run Base44 commands directly.
+## 🛠️ Installation
 
-## Run Locally
-
-Run the full local development environment from the project root:
+Clone the repository:
 
 ```bash
-base44 dev
+git clone `https://github.com/raju-puli/dev-portfolio`
 ```
 
-`base44 dev` starts the local Base44 development backend and, when this app is configured for it, also starts the frontend dev server for you. Use the frontend URL printed by the command.
+Navigate to the project folder:
 
-For example, when the Base44 project config includes a `serveCommand`, `base44 dev` can launch the frontend too:
-
-```json5
-{
-  "site": {
-    "serveCommand": "npm run dev"
-  }
-}
+```bash
+cd dev-portfolio
 ```
 
-In a Base44 project this lives in `base44/config.jsonc`.
+Install dependencies:
 
-## Run Only The Frontend
+```bash
+npm install
+```
 
-If you only want to work on the frontend against the hosted Base44 backend, run:
+## ▶️ Run Locally
+
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open the local URL printed by Vite.
+Open the local URL shown in the terminal.
 
-## Use The Hosted Backend
-
-For frontend-only development, create or update `.env.local` in the project root:
+## 📦 Build for Production
 
 ```bash
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=https://your-app.db.app
+npm run build
 ```
 
-`VITE_BASE44_APP_ID` identifies the Base44 app.
+## 🌐 Deployment
 
-`VITE_BASE44_APP_BASE_URL` tells the Base44 Vite plugin where to send local `/api` requests. Point it at your deployed Base44 app URL when you want the local frontend to use the hosted backend.
+This project can be deployed using:
 
-When you use `base44 dev`, the command injects the local Base44 values for you, so `.env.local` is mainly needed for frontend-only workflows.
+* GitHub Pages
+* Vercel
+* Netlify
 
-## Publish Your Changes
+## 👨‍💻 About Me
 
-After pushing your changes to git, open the Base44 dashboard and publish the app:
+I’m Raju Puli, a Front-End Developer with experience in building modern web applications, interactive UI components, and responsive websites using React.js and Angular.
 
-```bash
-base44 dashboard open
-```
+## 📧 Contact
 
-## Docs & Support
-
-Documentation: [https://docs.db.com/Integrations/Using-GitHub](https://docs.db.com/Integrations/Using-GitHub)
-
-Base44 CLI command reference: [https://docs.db.com/developers/references/cli/commands/introduction](https://docs.db.com/developers/references/cli/commands/introduction)
-
-Support: [https://app.db.com/support](https://app.db.com/support)
+* GitHub: https://github.com/raju-puli
+* LinkedIn: https://www.linkedin.com/in/rajupuli/
+* Email: [rajupuli090322@gmail.com](mailto:rajupuli090322@gmail.com)

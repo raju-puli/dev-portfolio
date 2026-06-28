@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { Mail, Phone, MapPin, Github, Linkedin, Send, Download } from "lucide-react";
-import resume from "../../assets/Resume/raju__puli__resume.pdf"
+import resume from "../../../public/Resume/raju__puli__resume.pdf";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "rajupuli090322@gmail.com", href: "mailto:rajupuli090322@gmail.com" },

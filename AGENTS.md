@@ -1,36 +1,78 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
-
 # AGENTS.md
 
-## Project Context
+## Project Overview
 
-This is a Base44 app repository. Treat it as user-owned application code, keep changes focused on the user's request, and preserve existing project conventions.
+This repository contains the personal developer portfolio of Raju Puli, built using React.js and Vite.
 
-Start with `README.md` for local setup, environment variables, and publish workflow.
+The project showcases frontend development skills, projects, experience, and responsive UI design practices.
 
-## Base44 References
+## Tech Stack
 
-- CLI overview: https://docs.db.com/developers/references/cli/get-started/overview.md
-- Agent skills: https://docs.db.com/developers/backend/overview/skills.md
+* React.js
+* Vite
+* JavaScript
+* HTML5
+* CSS3
 
-If your agent supports Agent Skills, install or update Base44 skills before Base44-specific work:
+## Project Structure
+
+* `src/` — Main application source code
+* `src/components/` — Reusable UI components
+* `src/pages/` — Application pages/sections
+* `src/assets/` — Images, icons, and static assets
+* `public/` — Public static files
+* `vite.config.js` — Vite configuration
+
+## Development Setup
+
+Install dependencies:
 
 ```bash
-npx skills add base44/skills
+npm install
 ```
 
-## Key Files
+Start the development server:
 
-- `src/`: frontend application source.
-- `src/api/base44Client.js`: frontend Base44 SDK client.
-- `vite.config.js`: Vite config and Base44 Vite plugin setup.
-- `.env.local`: local-only environment values; never commit secrets.
+```bash
+npm run dev
+```
 
-## Working Notes
+Build for production:
 
-- Use `base44 dev` as the default local development command when you need the local Base44 backend. It can run the backend and frontend together.
-- When docs or code mention the frontend being started automatically, that usually means the Base44 project config includes `site.serveCommand`, for example `"serveCommand": "npm run dev"` in `base44/config.jsonc`.
-- Use `npm run dev` only for frontend-only work against the hosted Base44 backend.
-- Prefer the existing Base44 CLI workflow over adding new npm scripts for Base44-specific tasks.
-- Reuse the existing SDK client and Vite plugin patterns before adding new Base44 integration paths.
-- Run the relevant checks from `package.json` before finishing code changes.
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+## Development Guidelines
+
+* Keep components reusable and modular.
+* Follow consistent folder structure and naming conventions.
+* Maintain responsive design across all screen sizes.
+* Optimize performance and accessibility where possible.
+* Prefer clean and maintainable React patterns.
+
+## Coding Standards
+
+* Use functional React components.
+* Use meaningful component and variable names.
+* Keep styling organized and responsive.
+* Avoid unnecessary dependencies.
+
+## Deployment
+
+This project can be deployed using:
+
+* GitHub Pages
+* Netlify
+* Vercel
+
+## Author
+
+Raju Puli
+Frontend Developer

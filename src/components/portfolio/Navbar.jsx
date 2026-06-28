@@ -3,7 +3,8 @@ const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
-import resume from "../../assets/Resume/raju__puli__resume.pdf"
+import resume from "../../../public/Resume/raju__puli__resume.pdf";
+import logo from "../../../public/logo.png";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -48,12 +49,16 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-16 md:h-20 ">
+
             <motion.a
               href="#hero"
-              className="font-display text-xl font-bold tracking-tight"
+              className="font-display text-xl font-bold tracking-tight nav_logo_cls"
               whileHover={{ scale: 1.05 }}
             >
+               <span className="text-primary">
+                <img className="pro_logo_cls" src={logo} alt="pro logo" loading="lazy"/>
+               </span>
               <span className="text-primary">R</span>
               <span className="text-foreground">aju</span>
               <span className="text-primary ml-1">P</span>

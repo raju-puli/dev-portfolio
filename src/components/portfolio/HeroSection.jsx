@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, ArrowDown, Github, Linkedin, Circle } from "lucide-react";
 import bg from "../../assets/bg.png";
-import avatar from "../../assets/avatar.png";
+import avatar from "../../assets/LinkedIn_profile.jpeg";
 
 const titles = [
   "Frontend Engineer",
@@ -37,7 +37,7 @@ export default function HeroSection() {
   }, [displayText, isDeleting, titleIndex]);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen-full flex items-center justify-center overflow-hidden">
       {/* Mesh gradient background */}
       <div className="absolute inset-0">
         <img

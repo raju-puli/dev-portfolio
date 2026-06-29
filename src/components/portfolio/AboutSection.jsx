@@ -63,7 +63,7 @@ export default function AboutSection() {
               gaming platforms.
             </p>
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg mb-6">
-              At <span className="text-primary font-semibold">Czar Gaming</span>, I build real-time multiplayer
+              At <span className="text-primary font-semibold"><a className="text_link" href="https://czargaming.com/" target="_blank">Czar Gaming</a></span>, I build real-time multiplayer
               poker platforms serving thousands of concurrent users — leveraging WebSockets, canvas rendering
               with Konva.js & GSAP, and cross-platform builds via Cordova across Android, iOS, Windows, and macOS.
             </p>

@@ -152,3 +152,7 @@ html {
 .popup_splash {
   opacity: 0.1;
 }
+
+.text_link:hover {
+  text-decoration: underline;
+}

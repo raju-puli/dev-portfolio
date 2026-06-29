@@ -1,4 +1,3 @@
-import React from "react";
 import ScrollProgress from "../components/portfolio/ScrollProgress";
 import FloatingParticles from "../components/portfolio/FloatingParticles";
 import Navbar from "../components/portfolio/Navbar";

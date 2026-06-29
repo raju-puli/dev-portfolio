@@ -113,7 +113,7 @@ export default function SkillsSection() {
           className="mt-12 flex flex-wrap justify-center gap-3"
         >
           {[
-            "React.js", "Angular", "TypeScript", "Redux", "WebSockets",
+            "React.js", "Angular", "TypeScript", "Redux", "NgRx", "WebSockets",
             "Konva.js", "GSAP", "Tailwind CSS", "Node.js", "Socket.io",
             "Cordova", "Git", "Webpack", "REST APIs", "Context API"
           ].map((tech, i) => (

@@ -57,18 +57,18 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg mb-6">
-              I'm a passionate Frontend Engineer with <span className="text-foreground font-semibold">4+ years</span> of 
-              hands-on experience building scalable, real-time web applications. I started my journey crafting 
-              responsive, multilingual websites with Angular, then evolved into React for high-performance 
+              I'm a passionate Frontend Engineer with <span className="text-foreground font-semibold">4+ years</span> of
+              hands-on experience building scalable, real-time web applications. I started my journey crafting
+              responsive, multilingual websites with Angular, then evolved into React for high-performance
               gaming platforms.
             </p>
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg mb-6">
-              At <span className="text-primary font-semibold">Czar Gaming</span>, I build real-time multiplayer 
-              poker platforms serving thousands of concurrent users — leveraging WebSockets, canvas rendering 
+              At <span className="text-primary font-semibold">Czar Gaming</span>, I build real-time multiplayer
+              poker platforms serving thousands of concurrent users — leveraging WebSockets, canvas rendering
               with Konva.js & GSAP, and cross-platform builds via Cordova across Android, iOS, Windows, and macOS.
             </p>
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-              My goal is to grow into a Full-Stack Developer with backend expertise in Node.js, Java, and Python 
+              My goal is to grow into a Full-Stack Developer with backend expertise in Node.js, Java, and Python
               while contributing to scalable system architecture and end-to-end product development.
             </p>
           </motion.div>
@@ -76,7 +76,7 @@ export default function AboutSection() {
           <div className="grid grid-cols-2 gap-3 sm:gap-4">
             <AnimatedCounter target={4} suffix="+" label="Years Experience" icon={Briefcase} />
             <AnimatedCounter target={20000} suffix="+" label="Concurrent Users" icon={Users} />
-            <AnimatedCounter target={10} suffix="+" label="Projects Shipped" icon={Globe} />
+            <AnimatedCounter target={20} suffix="+" label="Projects Shipped" icon={Globe} />
             <AnimatedCounter target={95} suffix="+" label="Lighthouse Score" icon={Zap} />
           </div>
         </div>

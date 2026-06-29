@@ -1,5 +1,3 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
-
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
@@ -42,11 +40,10 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled
             ? "bg-background/70 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-primary/5"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20 ">
@@ -56,9 +53,9 @@ export default function Navbar() {
               className="font-display text-xl font-bold tracking-tight nav_logo_cls"
               whileHover={{ scale: 1.05 }}
             >
-               <span className="text-primary">
-                <img className="pro_logo_cls" src={logo} alt="pro logo" loading="lazy"/>
-               </span>
+              <span className="text-primary">
+                <img className="pro_logo_cls" src={logo} alt="pro logo" loading="lazy" />
+              </span>
               <span className="text-primary">R</span>
               <span className="text-foreground">aju</span>
               <span className="text-primary ml-1">P</span>
@@ -71,11 +68,10 @@ export default function Navbar() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-lg ${
-                    activeSection === item.href.slice(1)
+                  className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-lg ${activeSection === item.href.slice(1)
                       ? "text-primary"
                       : "text-muted-foreground hover:text-foreground"
-                  }`}
+                    }`}
                 >
                   {item.label}
                   {activeSection === item.href.slice(1) && (

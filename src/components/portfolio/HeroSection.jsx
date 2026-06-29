@@ -16,25 +16,41 @@ export default function HeroSection() {
   const [titleIndex, setTitleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   useEffect(() => {
     const currentTitle = titles[titleIndex];
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
+    let timeout;
+
+    if (!isDeleting && !isTypingComplete) {
+      // Typing phase
+      timeout = setTimeout(() => {
         setDisplayText(currentTitle.slice(0, displayText.length + 1));
-        if (displayText.length === currentTitle.length) {
-          setTimeout(() => setIsDeleting(true), 2000);
+        if (displayText.length + 1 === currentTitle.length) {
+          setIsTypingComplete(true);
+          // Wait before starting deletion
+          setTimeout(() => {
+            setIsDeleting(true);
+            setIsTypingComplete(false);
+          }, 2000);
         }
-      } else {
-        setDisplayText(currentTitle.slice(0, displayText.length - 1));
-        if (displayText.length === 0) {
+      }, 80);
+    } else if (isDeleting) {
+      // Deleting phase
+      timeout = setTimeout(() => {
+        if (displayText.length > 0) {
+          setDisplayText(currentTitle.slice(0, displayText.length - 1));
+        } else {
+          // Move to next title
           setIsDeleting(false);
+          setIsTypingComplete(false);
           setTitleIndex((prev) => (prev + 1) % titles.length);
         }
-      }
-    }, isDeleting ? 40 : 80);
+      }, 40);
+    }
+
     return () => clearTimeout(timeout);
-  }, [displayText, isDeleting, titleIndex]);
+  }, [displayText, isDeleting, isTypingComplete, titleIndex]);
 
   return (
     <section id="hero" className="relative min-h-screen-full flex items-center justify-center overflow-hidden">

@@ -6,7 +6,7 @@ import { Trophy, Rocket, Gauge, MonitorSmartphone, Wifi, ShieldCheck } from "luc
 const achievements = [
   {
     icon: Rocket,
-    title: "50K+ Concurrent Users",
+    title: "20K+ Concurrent Users",
     desc: "Successfully launched gaming platform serving 20,000+ concurrent active users",
     color: "from-sky-400 to-blue-500",
   },

@@ -192,7 +192,7 @@ const websiteProjects = [
       "Multi-currency support (Rial & Crypto)"
     ],
     liveLink: "https://www.riverpoker.com/",
-    stats: { users: "50K+", games: "1K+", uptime: "99.9%" },
+    stats: { users: "10K+", games: "1K+", uptime: "99.9%" },
     category: "website",
     badge: <Globe className="w-5 h-5 text-purple-400" />,
     gradient: "from-purple-400 to-pink-300",

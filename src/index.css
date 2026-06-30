@@ -156,3 +156,47 @@ html {
 .text_link:hover {
   text-decoration: underline;
 }
+
+.bg_blur {
+  backdrop-filter: blur(20px);
+}
+
+.visit_web_link {
+  position: absolute;
+  top: -5rem;
+  right: 1rem;
+}
+
+
+
+
+
+
+@media (max-width: 640px) {
+  .visit_web_link {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    top: auto;
+    z-index: 50;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .visit_web_link {
+    position: fixed;
+    top: auto;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 50;
+  }
+}
+
+@media (min-width: 1025px) {
+  .visit_web_link {
+    position: absolute;
+    top: -5rem;
+    right: 1rem;
+  }
+}

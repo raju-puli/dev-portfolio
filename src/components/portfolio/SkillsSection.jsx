@@ -233,7 +233,6 @@ export default function SkillsSection() {
                 {activeCategory === cat.id && (
                   <motion.div
                     layoutId="activeCategory"
-                    // className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30"
                     className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg shadow-blue-500/30"
                     transition={{ type: "spring", duration: 0.6, bounce: 0.25 }}
                   />

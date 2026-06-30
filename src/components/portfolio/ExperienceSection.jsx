@@ -49,11 +49,11 @@ const experiences = [
     title: "React Game Developer",
     company: "Czar Gaming Pvt. Ltd.",
     period: "Jan 2023 — Present",
-    duration: "2+ years",
+    duration: "3+ years",
     location: "Hyderabad, India",
     type: "Full-time",
     color: "blue",
-    emoji: "🎮",
+    // emoji: "🎮",
     icon: <Gamepad2 className="w-5 h-5" />,
     description: "Building real-time multiplayer gaming platforms with React and WebSockets",
     achievements: [
@@ -64,9 +64,9 @@ const experiences = [
       "Optimized Redux state management, reducing render time by 30%",
       "Created interactive UIs using Konva.js and GSAP animations"
     ],
-    skills: ["React", "Redux", "WebSockets", "Konva.js", "GSAP", "Cordova"],
+    skills: ["React.js", "Redux", "WebSockets", "Konva", "GSAP", "Cordova"],
     stats: [
-      { label: "Games", value: "8+", icon: <Play className="w-3 h-3" /> },
+      { label: "Games", value: "4+", icon: <Play className="w-3 h-3" /> },
       { label: "Platforms", value: "5", icon: <Smartphone className="w-3 h-3" /> },
       { label: "Performance", value: "+30%", icon: <Zap className="w-3 h-3" /> }
     ]
@@ -80,7 +80,7 @@ const experiences = [
     location: "Hyderabad, India",
     type: "Full-time",
     color: "red",
-    emoji: "🌐",
+    // emoji: "🌐",
     icon: <Globe className="w-5 h-5" />,
     description: "Developing production websites with Angular and modern web technologies",
     achievements: [
@@ -106,7 +106,7 @@ const experiences = [
     location: "Remote",
     type: "Side Projects",
     color: "purple",
-    emoji: "💡",
+    // emoji: "💡",
     icon: <Star className="w-5 h-5" />,
     description: "Building personal projects with modern frontend technologies",
     achievements: [
@@ -115,11 +115,11 @@ const experiences = [
       "Mastered advanced React: Custom Hooks, Context API",
       "Explored WebSocket architecture and real-time applications"
     ],
-    skills: ["React", "Vite", "TypeScript", "Custom Hooks", "Tailwind CSS"],
+    skills: ["React", "Vite", "TypeScript", "Custom Hooks", "Tailwind CSS", "Redux", "WebSockets", "REST APIs"],
     stats: [
-      { label: "Projects", value: "10+", icon: <Code2 className="w-3 h-3" /> },
+      { label: "Projects", value: "3+", icon: <Code2 className="w-3 h-3" /> },
       { label: "Tech Stack", value: "15+", icon: <Cpu className="w-3 h-3" /> },
-      { label: "Clients", value: "4+", icon: <Heart className="w-3 h-3" /> }
+      // { label: "Clients", value: "4+", icon: <Heart className="w-3 h-3" /> }
     ]
   }
 ];
@@ -234,7 +234,7 @@ export default function ExperienceSection() {
                           <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors break-words">
                             {exp.title}
                           </h3>
-                          <span className="text-base sm:text-lg flex-shrink-0">{exp.emoji}</span>
+                          {/* <span className="text-base sm:text-lg flex-shrink-0">{exp.emoji}</span> */}
                         </div>
                         <p className="text-xs sm:text-sm text-muted-foreground flex items-center gap-1.5 mt-0.5 truncate">
                           <Building2 size={12} sm:size={13} className="text-primary flex-shrink-0" />

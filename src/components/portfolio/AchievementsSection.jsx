@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Trophy, Rocket, Gauge, MonitorSmartphone, Wifi } from "lucide-react";
+import { Trophy, Rocket, Gauge, MonitorSmartphone, Wifi, ShieldCheck } from "lucide-react";
 
 const achievements = [
   {
     icon: Rocket,
-    title: "20K+ Concurrent Users",
+    title: "50K+ Concurrent Users",
     desc: "Successfully launched gaming platform serving 20,000+ concurrent active users",
     color: "from-sky-400 to-blue-500",
   },
@@ -18,9 +18,9 @@ const achievements = [
   },
   {
     icon: Trophy,
-    title: "95+ Lighthouse Score",
-    desc: "Achieved 95+ Lighthouse scores for performance and accessibility",
-    color: "from-amber-400 to-orange-500",
+    title: "99.9% Uptime",
+    desc: "Maintained high platform availability through robust architecture, monitoring, and proactive issue resolution",
+    color: "from-cyan-400 to-indigo-500",
   },
   {
     icon: MonitorSmartphone,
@@ -34,6 +34,12 @@ const achievements = [
     desc: "Improved real-time responsiveness with WebSocket optimizations and state management",
     color: "from-rose-400 to-pink-500",
   },
+  {
+    icon: ShieldCheck,
+    title: "Enterprise-Grade Security",
+    desc: "Implemented secure authentication, role-based access control, and industry best practices for application security",
+    color: "from-green-400 to-emerald-500",
+  }
 ];
 
 export default function AchievementsSection() {
@@ -55,7 +61,7 @@ export default function AchievementsSection() {
             >
               {/* Gradient glow on hover */}
               <div className={`absolute -top-12 -right-12 w-32 h-32 rounded-full bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 blur-2xl transition-opacity duration-500`} />
-              
+
               <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} bg-opacity-10 flex items-center justify-center mb-4`}>
                 <item.icon size={22} className="text-white" />
               </div>

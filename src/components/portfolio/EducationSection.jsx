@@ -257,9 +257,9 @@ export default function EducationSection() {
                         </button>
                       </div>
                     </div>
-                    {isPDF(cert.file) && (
+                    {/* {isPDF(cert.file) && (
                       <FileText size={14} className="text-muted-foreground opacity-50" />
-                    )}
+                    )} */}
                   </motion.div>
                 );
               })}

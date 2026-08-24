@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
-import resume from "../../../public/Resume/raju__puli__resume.pdf";
+import resume from "../../../public/Resume/RajuPuli_ReactJs_Resume.pdf";
 import logo from "../../../public/logo.png";
 
 const navItems = [

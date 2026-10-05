@@ -99,10 +99,13 @@ import project1 from "../../assets/6774fbe31_generated_image.png";
 import project2 from "../../assets/f2c9605b3_generated_image.png";
 
 import riv_h5 from "../../assets/Projects_Imgs/riverpokerH5.png";
+import z_l from "../../assets/Projects_Imgs/zandu_lobby.png";
 import raj_h5 from "../../assets/Projects_Imgs/rajpokerH5.png";
 import south_lobby from "../../assets/Projects_Imgs/southrummyLobby.png";
 
 import riv from "../../assets/Projects_Imgs/riverpokerWeb.png";
+import m_r_web from "../../assets/Projects_Imgs/mr_web.png";
+import p_r_web from "../../assets/Projects_Imgs/pr_web.png";
 import raj from "../../assets/Projects_Imgs/rajpokerWeb.png";
 import vava from "../../assets/Projects_Imgs/vavaoneWeb.png";
 import playBet from "../../assets/Projects_Imgs/playbetWeb.png";
@@ -116,6 +119,39 @@ import weddingWebsite from "../../assets/Projects_Imgs/mywedWeb.png";
 
 // Game Projects Data
 const gameProjects = [
+  {
+    id: "thezandu-web",
+    title: "TheZandu",
+    description:
+      "Real-time multiplayer Teen Patti game with a modern interface. Features Zandu, Teen Patti, and variation tables.",
+    image: z_l,
+    tech: [
+      "React",
+      "TypeScript",
+      "WebSockets",
+      "Redux",
+      "Konva.js",
+      "GSAP",
+      "Bootstrap",
+      "Vite",
+    ],
+    features: [
+      "Multiplayer Teen Patti tables",
+      "Real-time WebSocket communication",
+      "Cross-platform mobile support",
+    ],
+    liveLink: "https://thezandu.com/z/",
+    stats: {
+      players: "10K+",
+      tables: "50+",
+      rating: "4.8",
+    },
+    category: "game",
+    badge: <Gamepad2 className="w-5 h-5 text-purple-400" />,
+    gradient: "from-purple-400 to-cyan-300",
+    accent: "purple",
+  },
+
   {
     id: "riverpoker-h5",
     title: "RiverPoker H5",
@@ -179,6 +215,71 @@ const gameProjects = [
 
 // Website Projects Data
 const websiteProjects = [
+  {
+    id: "mastirummy",
+    title: "Masti Rummy",
+    description:
+      "Modern online rummy platform with a responsive interface, real-time gameplay, secure API integration, and a seamless experience across web and mobile devices.",
+    image: m_r_web,
+    tech: [
+      "Angular",
+      "TypeScript",
+      "Bootstrap",
+      "REST APIs",
+      "Iframe",
+      "Real-Time Events",
+    ],
+    features: [
+      "Online multiplayer rummy gameplay",
+      "Responsive web and mobile interface",
+      "Real-time game events and updates",
+      "Secure REST API integration",
+    ],
+    liveLink: "https://www.riverpoker.com/",
+    stats: {
+      users: "10K+",
+      games: "1K+",
+      uptime: "99.9%",
+    },
+    category: "website",
+    badge: <Globe className="w-5 h-5 text-orange-400" />,
+    gradient: "from-orange-400 to-pink-300",
+    accent: "orange",
+  },
+
+
+  {
+    id: "polorummy",
+    title: "Polo Rummy",
+    description:
+      "Modern online rummy platform with a responsive interface, real-time gameplay, secure API integration, and a seamless experience across web and mobile devices.",
+    image: p_r_web,
+    tech: [
+      "Angular",
+      "TypeScript",
+      "Bootstrap",
+      "REST APIs",
+      "Iframe",
+      "Real-Time Events",
+    ],
+    features: [
+      "Online multiplayer rummy gameplay",
+      "Responsive web and mobile interface",
+      "Real-time game events and updates",
+      "Secure REST API integration",
+    ],
+    liveLink: "https://www.riverpoker.com/",
+    stats: {
+      users: "10K+",
+      games: "1K+",
+      uptime: "99.9%",
+    },
+    category: "website",
+    badge: <Globe className="w-5 h-5 text-[#d08a2e]" />,
+    gradient: "from-[#d08a2e] to-pink-300",
+    accent: "#d08a2e",
+  },
+
   {
     id: "riverpoker",
     title: "River Poker",
@@ -442,7 +543,7 @@ const ProjectModal = ({ project, onClose }) => {
             transition={{ duration: 0.6 }}
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a12] via-[#0a0a12]/60 to-transparent" />
           <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-20 mix-blend-overlay`} />

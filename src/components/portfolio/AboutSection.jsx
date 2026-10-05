@@ -57,7 +57,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg mb-6">
-              I'm a passionate Frontend Engineer with <span className="text-foreground font-semibold">4+ years</span> of
+              I'm a passionate Frontend Engineer with <span className="text-foreground font-semibold">4.7+ years</span> of
               hands-on experience building scalable, real-time web applications. I started my journey crafting
               responsive, multilingual websites with Angular, then evolved into React for high-performance
               gaming platforms.

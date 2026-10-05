@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, ArrowDown, Github, Linkedin, Circle } from "lucide-react";
 import bg from "../../assets/bg.png";
-import avatar from "../../assets/LinkedIn_profile.jpeg";
+// import avatar from "../../assets/LinkedIn_profile.jpeg";
+import avatar from "../../assets/LinkedIn_profile.png";
 
 const titles = [
   "Frontend Engineer",
@@ -130,7 +131,7 @@ export default function HeroSection() {
           transition={{ delay: 1 }}
           className="text-muted-foreground text-sm sm:text-lg max-w-2xl mx-auto mb-7 sm:mb-8 leading-relaxed px-2"
         >
-          4+ years building high-performance, real-time web applications.
+          4.7+ years building high-performance, real-time web applications.
           Delivering gaming platforms serving{" "}
           <span className="text-primary font-semibold">20,000+ concurrent users</span>{" "}
           with expertise in WebSockets, canvas rendering & cross-platform builds.

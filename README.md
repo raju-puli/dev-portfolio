@@ -72,4 +72,4 @@ I’m Raju Puli, a Front-End Developer with experience in building modern web ap
 
 * GitHub: https://github.com/raju-puli
 * LinkedIn: https://www.linkedin.com/in/rajupuli/
-* Email: [rajupuli090322@gmail.com](mailto:rajupuli090322@gmail.com)
+* Email: [raju.puli.dev@gmail.com](mailto:raju.puli.dev@gmail.com)

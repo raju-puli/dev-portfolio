@@ -150,7 +150,7 @@ export default function HeroSection() {
           </span>
           <span className="flex items-center gap-2 text-sm text-muted-foreground">
             <Mail size={14} className="text-primary" />
-            rajupuli090322@gmail.com
+            raju.puli.dev@gmail.com
           </span>
         </motion.div>
 

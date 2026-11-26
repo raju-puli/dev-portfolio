@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Github, Linkedin, Send, Download } from "lucide-re
 import resume from "../../../public/Resume/RajuPuli_ReactJs_Resume.pdf";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "rajupuli090322@gmail.com", href: "mailto:rajupuli090322@gmail.com" },
+  { icon: Mail, label: "Email", value: "raju.puli.dev@gmail.com", href: "mailto:raju.puli.dev@gmail.com" },
   { icon: Phone, label: "Phone", value: "+91 9133443451", href: "tel:+919133443451" },
   { icon: MapPin, label: "Location", value: "Hyderabad, India", href: null },
 ];
@@ -101,7 +101,7 @@ export default function ContactSection() {
                 e.preventDefault();
                 const data = new FormData(e.target);
                 window.open(
-                  `mailto:rajupuli090322@gmail.com?subject=${encodeURIComponent(data.get("subject"))}&body=${encodeURIComponent(data.get("message"))}`,
+                  `mailto:raju.puli.dev@gmail.com?subject=${encodeURIComponent(data.get("subject"))}&body=${encodeURIComponent(data.get("message"))}`,
                   "_blank"
                 );
               }}
